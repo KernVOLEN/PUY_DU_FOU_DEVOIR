@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Devoir de web programmation de BATINI Julian: Le Puy du Fou">
+    <title>Le puy du fou</title>
+    <link rel="icon" href="IMAGE/favicon.ico">
+    <link rel="stylesheet" media="screen" href="PdF.css">
+    <link rel="stylesheet" media="print" href="IMPRESSION.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+  </head>
+
+  <header>
+    <h1>Le Puy du Fou</h1>
+    <h2>Les Epesses en Vendée</h2>
+    <img src="IMAGE/blason.png" alt="blason" id="blas"></header>
+
+  <div id="racourcis">
+    <a href="#para1"><strong>Le concept</strong></a>
+    <a href="#para2"><strong>Le spectacle viking</strong></a>
+    <a href="#para3"><strong>La cinéscénie</strong></a>
+    <a href="#gallerie"><strong>Galerie</strong></a>
+    <a href="#carte"><strong>Carte</strong></a>
+    <a href="Contact.html"><strong>Contacts</strong></a></div>
+  <div id="racourcis2">
+    <button class="list_deroulante">Guide</button>
+    <div id="racourcis2_enfant">
+      <a href="INDEX.html#para1"><strong>Le concept</strong></a>
+      <a href="INDEX.html#para2"><strong>Le spectacle viking</strong></a>
+      <a href="INDEX.html#para3"><strong>La cinéscénie</strong></a>
+      <a href="INDEX.html#gallerie"><strong>Galerie</strong></a>
+      <a href="INDEX.html#carte"><strong>Carte</strong></a>
+      <a href="Contact.html"><strong>Contacts</strong></a></div></div>
+
+  <div id="bod">
+    <section id="sec1">
+      <div id="para1">
+        <h3>Le concept</h3>
+        <p>Au Puy du Fou, les visiteurs oublient le XXIe siècle et la technologie. De jour comme de nuit, ils partent pour un grand voyage dans le temps en choisissant leur époque, de l'age viking à la Renaissance en passant par le Moyen Age, leurs spectacles, leur gastronomie en totale liberté !leurs créations sont conçues comme de grands films en direct, servis par une action rythmée et des effets spéciaux grandioses, mais l’émotion reste au cœur du concept du Puy du Fou. Les visiteurs doivent ainsi être saisis par la poésie d’un texte, la beauté d’un geste et la pureté d’une musique comme dans leur spectace "Le dernier panarche" narrant la vie et les exploits de Charette jusqu'à la conclusion épique de sa vie.</p>
+        <p>Il suffit d’une seconde pour faire naître cette émotion unique, ce frisson ! Les équipes du Puy du Fou sont à la recherche perpétuelle de cette émotion juste qui touche le cœur des spectateurs et fait d'un spectacle, une expérience que l’on oubliera jamais. Eclater de rire, sursauter de peur, ou sentir une larme couler … toutes les émotions sont au Puy du Fou !</p>
+      </div>
+      <div id="para2">
+        <h3>Le spectacle viking</h3>
+        <p>Alors que tout le village célèbre les noces de Sybèle et Aldéric, d’effrayants drakkars surgissent au milieu des flammes gigantesques et les féroces Vikings débarquent sur le « Saint Philbert le Vieil » et ses huttes aux toits de chaume. Au pied de l’imposante motte féodale, le combat fait rage dans un déluge de cascades et d’effets spéciaux ! Faisant preuve d’une immense bravoure, les villageois tentent de repousser les assaillants et de protéger leurs terres. En 2022, assistez à cette lutte épique et vibrez au rythme des cascades et acrobaties de leurs talents !</p>
+      </div>
+      <div id="para3">
+        <h3>La cinéscénie</h3>
+        <p>Déjà plus de 13 millions de spectateurs, 2 550 acteurs sur une scène de 23 hectares, 28 000 costumes, 1h30 de grand spectacle et de nombreuses nouveautés … Le plus grand spectacle de nuit au monde est devenu un mythe immanquable ! En quelques années, la Cinéscénie est entrée dans une nouvelle dimension avec de nombreuses évolutions artistiques et techniques : la nouvelle mise en scène de lumière, les nouvelles projections vidéo 3D et de nouveaux décors, de nouvelles scènes au fil des années avec de nouveaux effets spéciaux, etc. La Cinéscénie vous en mettra plein les yeux !</p>
+      </div>
+      <strong><a href="https://www.puydufou.com/france/fr" title="Site officiel" target="_blank" id="site">-> Devenez vous aussi un héro de la France</a></strong>
+    </section>
+    <section id="sec2">
+      <h3>Galerie photos</h3>
+      <div id="gallerie">
+        <img src="IMAGE/P1.png" alt="Skarbrand">
+        <img src="IMAGE/P2.png" alt="Skarbrand">
+        <img src="IMAGE/P3.png" alt="Skarbrand">
+        <img src="IMAGE/P4.png" alt="Skarbrand">
+        <img src="IMAGE/P5.png" alt="Skarbrand">
+        <img src="IMAGE/P6.png" alt="Skarbrand">
+      </div>
+    </section>
+    <section id="carte">
+      <h3>Situation géographique:</h3>
+      <div id="carte_tab">
+        <ul>
+          <li>91km d'Anger;</li>
+          <li>81km de Nantes;</li>
+          <li>382km de Paris;</li>
+          <li>600km de Lille;</li>
+          <li>683km de Lyon.</li></ul>
+        <div id="map"></div>
+      </div>
+    </section>
+    <section id="contact">
+      <h3>Contacts:</h3>
+      <p>Pour plus d'information, nous experts sont à votre disposition pour répondre à toute question:</p>
+      <div id="cadre_adresse">
+        <form method="post" action="traitement.php">
+        <p><label>Votre adresse mail:</label>
+          <input type="text" name="adresse" id="adresse" placeholder="Ex : kern.volen@gmail.com" size="30" maxlength="30" />
+      </div>
+      <div id="cadre_mail">
+        <form method="post" action="traitement.php">
+          <p><label for="mail">mail:</label><br />
+          <textarea name="mail" id="mail"></textarea></p></form>
+      </div>
+      <div id="envoyer">
+        <button>Envoyer</button>
+      </div>
+    </section>
+  </div>
+  <div id="axe"></div>
+    <!-- <img src="IMAGE/axe.png" id="axe"> -->
+  <div id="bas">
+    <img src="IMAGE/merci.png" alt="code" id="thx">
+    <img src="IMAGE/QR.png" alt="code" id="QR"></div>
+  <footer>
+    <div class="G1" id="G11"></div>
+    <div class="G2" id="G12"></div>
+    <div class="D1" id="D11"></div>
+    <div class="D2" id="D12"></div>
+    <p>Site web réalisé par BATINI Julian</p></footer>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+  crossorigin=""></script>
+  <script src="map.js"></script>
+</html>
